@@ -3,7 +3,12 @@
   "plugins": [
     {
       "name": "grilling",
-      "source": { "source": "local", "path": "../../grilling" }
+      "source": { "source": "local", "path": "../../grilling" },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }
