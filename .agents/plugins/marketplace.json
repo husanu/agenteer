@@ -1,0 +1,9 @@
+{
+  "name": "agenteer",
+  "plugins": [
+    {
+      "name": "grilling",
+      "source": { "type": "local", "path": "../../grilling" }
+    }
+  ]
+}

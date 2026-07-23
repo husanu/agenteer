@@ -1,0 +1,13 @@
+{
+  "name": "agenteer",
+  "owner": { "name": "Andrei Husanu", "email": "agenteer@egitr.com" },
+  "description": "My Plugins for Claude Code",
+  "plugins": [
+    {
+      "name": "grilling",
+      "source": "./grilling",
+      "description": "Grill the user relentlessly about a plan, decision, or idea",
+      "category": "productivity"
+    }
+  ]
+}

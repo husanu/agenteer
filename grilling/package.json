@@ -1,0 +1,17 @@
+{
+  "name": "pi-grilling-skill",
+  "version": "1.0.2",
+  "description": "Grill the user relentlessly about a plan, decision, or idea",
+  "license": "Apache-2.0",
+  "author": "Andrei Husanu <pi-grilling-skill@egitr.com>",
+  "keywords": ["pi-package"],
+  "files": ["skills"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/husanu/agenteer",
+    "directory": "grilling"
+  },
+  "pi": {
+    "skills": ["./skills"]
+  }
+}
