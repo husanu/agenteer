@@ -1,7 +1,7 @@
 {
   "name": "grilling",
   "description": "Grill the user relentlessly about a plan, decision, or idea",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": { "name": "Andrei Husanu", "email": "agenteer-grilling@egitr.com" },
   "skills": "./skills/"
 }
