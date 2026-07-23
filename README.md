@@ -57,7 +57,7 @@ committing to it, or just say "grill me" / "grill this".
 | Agent | Install command |
 |---|---|
 | Claude Code | `claude plugin install grilling@agenteer` |
-| Codex CLI | `codex plugin install grilling` |
+| Codex CLI | `codex plugin add grilling@agenteer` |
 | Pi | `pi install npm:pi-grilling-skill` |
 
 ## Contributing
