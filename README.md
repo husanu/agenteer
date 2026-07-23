@@ -12,7 +12,7 @@ marketplace once, then install whichever plugins you want.
 
 ```bash
 claude plugin marketplace add husanu/agenteer
-claude plugin install <plugin-name>@agenteer
+claude plugin install <plugin-name>@agenteer  [--scope local|project|user]
 ```
 
 Keep it updated with `claude plugin marketplace update agenteer` followed by
@@ -24,8 +24,10 @@ Keep it updated with `claude plugin marketplace update agenteer` followed by
 
 ```bash
 codex plugin marketplace add husanu/agenteer --ref main
-codex plugin install <plugin-name>
+codex plugin add <plugin-name>@agenteer
 ```
+
+No per project config in codex yet: [Repository-scoped marketplace and plugin configuration in project config](https://github.com/openai/codex/issues/18115)
 
 Keep it updated with `codex plugin marketplace upgrade agenteer`.
 </details>
@@ -37,7 +39,7 @@ Pi has no marketplace concept — each plugin below is published as its own
 npm package:
 
 ```bash
-pi install npm:<npm-package-name>
+pi install npm:<npm-package-name> [--local]
 ```
 </details>
 
