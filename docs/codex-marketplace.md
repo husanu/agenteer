@@ -34,7 +34,7 @@ non-shared catalog):
   "plugins": [
     {
       "name": "my-plugin",
-      "source": { "type": "local", "path": "../../my-plugin" }
+      "source": { "source": "local", "path": "../../my-plugin" }
     }
   ]
 }
@@ -122,7 +122,7 @@ repo README for the full layout).
    manifest uses — don't duplicate the `SKILL.md`).
 2. Add an entry to `.agents/plugins/marketplace.json` at the repo root:
    ```json
-   { "name": "<plugin-name>", "source": { "type": "local", "path": "../../<plugin-name>" } }
+   { "name": "<plugin-name>", "source": { "source": "local", "path": "../../<plugin-name>" } }
    ```
 3. From a clean Codex session: `codex plugin marketplace add owner/agenteer --ref main`
    then `codex plugin install <plugin-name>` to smoke-test.

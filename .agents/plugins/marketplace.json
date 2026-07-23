@@ -3,7 +3,7 @@
   "plugins": [
     {
       "name": "grilling",
-      "source": { "type": "local", "path": "../../grilling" }
+      "source": { "source": "local", "path": "../../grilling" }
     }
   ]
 }
