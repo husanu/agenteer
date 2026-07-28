@@ -60,6 +60,21 @@ committing to it, or just say "grill me" / "grill this".
 | Codex CLI | `codex plugin add grilling@agenteer` |
 | Pi | `pi install npm:pi-grilling-skill` |
 
+### handoff
+
+Compact the current conversation into a handoff document for another agent to
+pick up — saved to your OS's temp directory, with a suggested-skills section
+and sensitive info redacted.
+
+**Use it when** you're wrapping up a session and want a fresh agent (or
+yourself later) to pick up the work with full context.
+
+| Agent | Install command |
+|---|---|
+| Claude Code | `claude plugin install handoff@agenteer` |
+| Codex CLI | `codex plugin add handoff@agenteer` |
+| Pi | `pi install npm:pi-handoff-skill` |
+
 ## Contributing
 
 Want to add or publish a plugin? See [CONTRIBUTING.md](CONTRIBUTING.md).
