@@ -8,6 +8,12 @@
       "source": "./grilling",
       "description": "Grill the user relentlessly about a plan, decision, or idea",
       "category": "productivity"
+    },
+    {
+      "name": "handoff",
+      "source": "./handoff",
+      "description": "Compact the current conversation into a handoff document for another agent to pick up",
+      "category": "productivity"
     }
   ]
 }

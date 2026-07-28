@@ -1,0 +1,17 @@
+{
+  "name": "pi-handoff-skill",
+  "version": "1.0.0",
+  "description": "Compact the current conversation into a handoff document for another agent to pick up",
+  "license": "Apache-2.0",
+  "author": "Andrei Husanu <pi-handoff-skill@egitr.com>",
+  "keywords": ["pi-package"],
+  "files": ["skills"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/husanu/agenteer",
+    "directory": "handoff"
+  },
+  "pi": {
+    "skills": ["./skills"]
+  }
+}
