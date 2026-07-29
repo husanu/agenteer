@@ -60,6 +60,40 @@ committing to it, or just say "grill me" / "grill this".
 | Codex CLI | `codex plugin add grilling@agenteer` |
 | Pi | `pi install npm:pi-grilling-skill` |
 
+### domain-modeling
+
+Build and sharpen a project's domain model as you design — challenges fuzzy
+terms, stress-tests domain relationships with edge-case scenarios, and writes
+the glossary (`CONTEXT.md`) and architectural decisions (`docs/adr/`) down the
+moment they crystallise.
+
+**Use it when** you want to pin down domain terminology or a ubiquitous
+language, or record an architectural decision.
+
+| Agent | Install command |
+|---|---|
+| Claude Code | `claude plugin install domain-modeling@agenteer` |
+| Codex CLI | `codex plugin add domain-modeling@agenteer` |
+| Pi | `pi install npm:pi-domain-modeling-skill` |
+
+### grill2docs
+
+Grill you relentlessly about a plan or design, recording ADRs and a glossary
+as you go — combines `grilling` and `domain-modeling` so the interview leaves
+behind durable docs instead of just a conversation.
+
+**Requires** the `grilling` and `domain-modeling` plugins to be installed
+first — this skill is just the two of them combined.
+
+**Use it when** you want a design grilled and captured as ADRs and a glossary
+in the same session.
+
+| Agent | Install command |
+|---|---|
+| Claude Code | `claude plugin install grill2docs@agenteer` |
+| Codex CLI | `codex plugin add grill2docs@agenteer` |
+| Pi | `pi install npm:pi-grill2docs-skill` |
+
 ### handoff
 
 Compact the current conversation into a handoff document for another agent to
