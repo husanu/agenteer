@@ -1,0 +1,17 @@
+{
+  "name": "pi-domain-modeling-skill",
+  "version": "1.0.0",
+  "description": "Build and sharpen a project's domain model, recording a glossary and ADRs as you go",
+  "license": "Apache-2.0",
+  "author": "Andrei Husanu <pi-domain-modeling-skill@egitr.com>",
+  "keywords": ["pi-package"],
+  "files": ["skills"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/husanu/agenteer",
+    "directory": "domain-modeling"
+  },
+  "pi": {
+    "skills": ["./skills"]
+  }
+}

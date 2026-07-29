@@ -10,6 +10,18 @@
       "category": "productivity"
     },
     {
+      "name": "grill2docs",
+      "source": "./grill2docs",
+      "description": "Grill the user relentlessly about a plan or design, recording ADRs and a glossary as you go",
+      "category": "productivity"
+    },
+    {
+      "name": "domain-modeling",
+      "source": "./domain-modeling",
+      "description": "Build and sharpen a project's domain model, recording a glossary and ADRs as you go",
+      "category": "productivity"
+    },
+    {
       "name": "handoff",
       "source": "./handoff",
       "description": "Compact the current conversation into a handoff document for another agent to pick up",

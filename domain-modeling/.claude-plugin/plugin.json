@@ -1,0 +1,7 @@
+{
+  "name": "domain-modeling",
+  "description": "Build and sharpen a project's domain model, recording a glossary and ADRs as you go",
+  "version": "1.0.0",
+  "author": { "name": "Andrei Husanu", "email": "agenteer-domain-modeling@egitr.com" },
+  "skills": "./skills/"
+}

@@ -11,6 +11,24 @@
       "category": "Productivity"
     },
     {
+      "name": "domain-modeling",
+      "source": { "source": "local", "path": "./domain-modeling" },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "grill2docs",
+      "source": { "source": "local", "path": "./grill2docs" },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
       "name": "handoff",
       "source": { "source": "local", "path": "./handoff" },
       "policy": {

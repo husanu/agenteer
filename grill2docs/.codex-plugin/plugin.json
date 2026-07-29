@@ -1,0 +1,7 @@
+{
+  "name": "grill2docs",
+  "description": "Grill the user relentlessly about a plan or design, recording ADRs and a glossary as you go",
+  "version": "1.0.0",
+  "author": { "name": "Andrei Husanu", "email": "agenteer-grill2docs@egitr.com" },
+  "skills": "./skills/"
+}

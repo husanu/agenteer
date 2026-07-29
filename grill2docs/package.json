@@ -1,0 +1,17 @@
+{
+  "name": "pi-grill2docs-skill",
+  "version": "1.0.0",
+  "description": "Grill the user relentlessly about a plan or design, recording ADRs and a glossary as you go",
+  "license": "Apache-2.0",
+  "author": "Andrei Husanu <pi-grill2docs-skill@egitr.com>",
+  "keywords": ["pi-package"],
+  "files": ["skills"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/husanu/agenteer",
+    "directory": "grill2docs"
+  },
+  "pi": {
+    "skills": ["./skills"]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "domain-modeling",
+  "version": "1.0.0",
+  "description": "Build and sharpen a project's domain model, recording a glossary and ADRs as you go",
+  "skills": "./skills/"
+}

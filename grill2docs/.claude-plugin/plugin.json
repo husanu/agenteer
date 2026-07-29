@@ -1,0 +1,6 @@
+{
+  "name": "grill2docs",
+  "version": "1.0.0",
+  "description": "Grill the user relentlessly about a plan or design, recording ADRs and a glossary as you go",
+  "skills": "./skills/"
+}
