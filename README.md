@@ -109,6 +109,23 @@ yourself later) to pick up the work with full context.
 | Codex CLI | `codex plugin add handoff@agenteer` |
 | Pi | `pi install npm:pi-handoff-skill` |
 
+### jira-cli
+
+Drive Atlassian Jira from the terminal with the
+[`jira` CLI](https://github.com/ankitpokhrel/jira-cli) — list, view, search, create,
+edit, transition, assign, comment on, and link issues (plus epics, sprints, boards, and
+projects) without ever dropping into the interactive TUI.
+
+**Use it when** you want to do Jira work from the command line, or just say things like
+"list my open bugs in FOO" or "move FOO-123 to Done". Requires the `jira` binary installed
+and configured (`jira init`) with your API token.
+
+| Agent | Install command |
+|---|---|
+| Claude Code | `claude plugin install jira-cli@agenteer` |
+| Codex CLI | `codex plugin add jira-cli@agenteer` |
+| Pi | `pi install npm:pi-jira-cli-skill` |
+
 ## Contributing
 
 Want to add or publish a plugin? See [CONTRIBUTING.md](CONTRIBUTING.md).

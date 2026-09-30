@@ -1,0 +1,7 @@
+{
+  "name": "jira-cli",
+  "description": "Drive Jira from the terminal with the ankitpokhrel/jira-cli tool — list, view, search, create, edit, transition, comment on, and link issues non-interactively",
+  "version": "1.0.0",
+  "author": { "name": "Andrei Husanu", "email": "agenteer-jira-cli@egitr.com" },
+  "skills": "./skills/"
+}

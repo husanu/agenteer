@@ -1,0 +1,6 @@
+{
+  "name": "jira-cli",
+  "version": "1.0.0",
+  "description": "Drive Jira from the terminal with the ankitpokhrel/jira-cli tool — list, view, search, create, edit, transition, comment on, and link issues non-interactively",
+  "skills": "./skills/"
+}

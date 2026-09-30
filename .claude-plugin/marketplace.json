@@ -26,6 +26,12 @@
       "source": "./handoff",
       "description": "Compact the current conversation into a handoff document for another agent to pick up",
       "category": "productivity"
+    },
+    {
+      "name": "jira-cli",
+      "source": "./jira-cli",
+      "description": "Drive Jira from the terminal with the ankitpokhrel/jira-cli tool, non-interactively",
+      "category": "productivity"
     }
   ]
 }
