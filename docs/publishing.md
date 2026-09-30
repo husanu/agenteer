@@ -7,7 +7,8 @@ overall layout and the per-agent docs for background on each catalog format.
 ## A. Publishing a new version of an existing plugin
 
 1. Make your content/code changes inside `<plugin-name>/`.
-2. Bump the version number in all three manifests so they stay in sync:
+2. Bump the version number in all four manifests so they stay in sync:
+   - `<plugin-name>/plugin.json` (`"version"`)
    - `<plugin-name>/package.json` (`"version"`)
    - `<plugin-name>/.claude-plugin/plugin.json` (`"version"`)
    - `<plugin-name>/.codex-plugin/plugin.json` (`"version"`)
@@ -30,6 +31,7 @@ overall layout and the per-agent docs for background on each catalog format.
 7. Tell/remind consumers how to pick up the update:
    - **Claude Code**: `claude plugin marketplace update agenteer && claude plugin update <plugin-name>@agenteer`
    - **Codex**: `codex plugin marketplace upgrade agenteer` (no per-plugin update command — this re-pulls everything on the pinned ref)
+   - **GitHub Copilot CLI**: `copilot plugin marketplace update agenteer && copilot plugin update <plugin-name>`
    - **Pi**: `pi install npm:<npm-package-name>@<new-version>` (npm-sourced packages are version-pinned; `pi update --extensions` won't move to a newer version on its own)
 
 ## B. Adding a brand-new plugin
@@ -39,17 +41,26 @@ overall layout and the per-agent docs for background on each catalog format.
    <plugin-name>/skills/<plugin-name>/SKILL.md
    ```
    with the usual frontmatter (`name`, `description`).
-2. Create the three manifests inside `<plugin-name>/`, all pointing at the
+2. Create the four manifests inside `<plugin-name>/`, all pointing at the
    same `skills/` folder — don't duplicate `SKILL.md`:
+   - `plugin.json` — Agent Plugins 1.0 manifest with `$schema`, `{ "name", "description", "version", "author", "license" }`; Copilot CLI automatically loads `skills/`
    - `.claude-plugin/plugin.json` — `{ "name", "description", "version", "author", "skills": "./skills/" }`
    - `.codex-plugin/plugin.json` — `{ "name", "version", "description", "skills": "./skills/" }`
    - `package.json` — `{ "name": "<unique-npm-name>", "version", "keywords": ["pi-package"], "pi": { "skills": ["./skills"] } }`
      Pick a unique, unclaimed npm name (check with `npm view <name>` — a 404 means it's free).
-3. Register the plugin in both root catalogs:
+3. Register the plugin in all three root catalogs:
    - `.claude-plugin/marketplace.json` — add `{ "name": "<plugin-name>", "source": "./<plugin-name>", "description": "...", "category": "..." }`
    - `.agents/plugins/marketplace.json` — add `{ "name": "<plugin-name>", "source": { "type": "local", "path": "../../<plugin-name>" } }`
+   - `.github/plugin/marketplace.json` — add `{ "name": "<plugin-name>", "source": "./<plugin-name>", "description": "...", "version": "..." }`
 4. Validate: `claude plugin validate ./<plugin-name> --strict`
-5. Smoke-test locally, then clean up the test install:
+5. Smoke-test Copilot CLI locally, then clean up the test install:
+   ```bash
+   copilot plugin marketplace add ./
+   copilot plugin install <plugin-name>@agenteer
+   copilot plugin uninstall <plugin-name>
+   copilot plugin marketplace remove agenteer
+   ```
+6. Smoke-test Claude Code locally, then clean up the test install:
    ```bash
    claude plugin marketplace add ./
    claude plugin install <plugin-name>@agenteer
@@ -57,10 +68,10 @@ overall layout and the per-agent docs for background on each catalog format.
    claude plugin uninstall <plugin-name>@agenteer
    claude plugin marketplace remove agenteer
    ```
-6. Confirm `make list` picks up the new package, then publish it to npm:
+7. Confirm `make list` picks up the new package, then publish it to npm:
    ```bash
    make pack PKG=<plugin-name>     # inspect the tarball first
    make publish PKG=<plugin-name>
    ```
-7. Commit and push everything (`<plugin-name>/`, both marketplace catalog
+8. Commit and push everything (`<plugin-name>/`, all three marketplace catalog
    edits) in one commit.

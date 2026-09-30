@@ -1,0 +1,10 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "grilling",
+  "description": "Grill the user relentlessly about a plan, decision, or idea",
+  "version": "1.0.3",
+  "author": { "name": "Andrei Husanu", "email": "agenteer-grilling@egitr.com" },
+  "repository": "https://github.com/husanu/agenteer",
+  "license": "Apache-2.0",
+  "keywords": ["productivity", "planning", "decision-making"]
+}

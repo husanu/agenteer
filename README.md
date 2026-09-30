@@ -1,8 +1,9 @@
 # Agenteer
 
 A marketplace of skills for [Claude Code](https://claude.com/claude-code),
-[Codex CLI](https://github.com/openai/codex), and the
-[Pi coding agent](https://pi.dev) — pick your agent below, add the
+[Codex CLI](https://github.com/openai/codex),
+[GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli),
+and the [Pi coding agent](https://pi.dev) — pick your agent below, add the
 marketplace once, then install whichever plugins you want.
 
 ## Setup
@@ -33,6 +34,18 @@ Keep it updated with `codex plugin marketplace upgrade agenteer`.
 </details>
 
 <details>
+<summary><strong>GitHub Copilot CLI</strong></summary>
+
+```bash
+copilot plugin marketplace add husanu/agenteer
+copilot plugin install <plugin-name>@agenteer
+```
+
+Keep it updated with `copilot plugin marketplace update agenteer` followed by
+`copilot plugin update <plugin-name>`.
+</details>
+
+<details>
 <summary><strong>Pi coding agent</strong></summary>
 
 Pi has no marketplace concept — each plugin below is published as its own
@@ -58,6 +71,7 @@ committing to it, or just say "grill me" / "grill this".
 |---|---|
 | Claude Code | `claude plugin install grilling@agenteer` |
 | Codex CLI | `codex plugin add grilling@agenteer` |
+| GitHub Copilot CLI | `copilot plugin install grilling@agenteer` |
 | Pi | `pi install npm:pi-grilling-skill` |
 
 ### domain-modeling
@@ -74,6 +88,7 @@ language, or record an architectural decision.
 |---|---|
 | Claude Code | `claude plugin install domain-modeling@agenteer` |
 | Codex CLI | `codex plugin add domain-modeling@agenteer` |
+| GitHub Copilot CLI | `copilot plugin install domain-modeling@agenteer` |
 | Pi | `pi install npm:pi-domain-modeling-skill` |
 
 ### grill2docs
@@ -92,6 +107,7 @@ in the same session.
 |---|---|
 | Claude Code | `claude plugin install grill2docs@agenteer` |
 | Codex CLI | `codex plugin add grill2docs@agenteer` |
+| GitHub Copilot CLI | `copilot plugin install grill2docs@agenteer` |
 | Pi | `pi install npm:pi-grill2docs-skill` |
 
 ### handoff
@@ -107,6 +123,7 @@ yourself later) to pick up the work with full context.
 |---|---|
 | Claude Code | `claude plugin install handoff@agenteer` |
 | Codex CLI | `codex plugin add handoff@agenteer` |
+| GitHub Copilot CLI | `copilot plugin install handoff@agenteer` |
 | Pi | `pi install npm:pi-handoff-skill` |
 
 ### jira-cli
@@ -124,6 +141,7 @@ and configured (`jira init`) with your API token.
 |---|---|
 | Claude Code | `claude plugin install jira-cli@agenteer` |
 | Codex CLI | `codex plugin add jira-cli@agenteer` |
+| GitHub Copilot CLI | `copilot plugin install jira-cli@agenteer` |
 | Pi | `pi install npm:pi-jira-cli-skill` |
 
 ## Contributing

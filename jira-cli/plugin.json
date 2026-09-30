@@ -1,0 +1,10 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "jira-cli",
+  "description": "Drive Jira from the terminal with the ankitpokhrel/jira-cli tool, non-interactively",
+  "version": "1.0.0",
+  "author": { "name": "Andrei Husanu", "email": "agenteer-jira-cli@egitr.com" },
+  "repository": "https://github.com/husanu/agenteer",
+  "license": "Apache-2.0",
+  "keywords": ["productivity", "jira", "project-management"]
+}

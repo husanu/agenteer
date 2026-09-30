@@ -1,0 +1,10 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "domain-modeling",
+  "description": "Build and sharpen a project's domain model, recording a glossary and ADRs as you go",
+  "version": "1.0.0",
+  "author": { "name": "Andrei Husanu", "email": "agenteer-domain-modeling@egitr.com" },
+  "repository": "https://github.com/husanu/agenteer",
+  "license": "Apache-2.0",
+  "keywords": ["productivity", "domain-driven-design", "architecture", "documentation"]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "agenteer",
+  "owner": { "name": "Andrei Husanu", "email": "agenteer@egitr.com" },
+  "metadata": {
+    "description": "Productivity skills for GitHub Copilot CLI",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "grilling",
+      "source": "./grilling",
+      "description": "Grill the user relentlessly about a plan, decision, or idea",
+      "version": "1.0.3",
+      "category": "productivity"
+    },
+    {
+      "name": "grill2docs",
+      "source": "./grill2docs",
+      "description": "Grill the user relentlessly about a plan or design, recording ADRs and a glossary as you go",
+      "version": "1.0.0",
+      "category": "productivity"
+    },
+    {
+      "name": "domain-modeling",
+      "source": "./domain-modeling",
+      "description": "Build and sharpen a project's domain model, recording a glossary and ADRs as you go",
+      "version": "1.0.0",
+      "category": "productivity"
+    },
+    {
+      "name": "handoff",
+      "source": "./handoff",
+      "description": "Compact the current conversation into a handoff document for another agent to pick up",
+      "version": "1.0.0",
+      "category": "productivity"
+    },
+    {
+      "name": "jira-cli",
+      "source": "./jira-cli",
+      "description": "Drive Jira from the terminal with the ankitpokhrel/jira-cli tool, non-interactively",
+      "version": "1.0.0",
+      "category": "productivity"
+    }
+  ]
+}

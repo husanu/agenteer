@@ -1,0 +1,10 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "handoff",
+  "description": "Compact the current conversation into a handoff document for another agent to pick up",
+  "version": "1.0.0",
+  "author": { "name": "Andrei Husanu", "email": "agenteer-handoff@egitr.com" },
+  "repository": "https://github.com/husanu/agenteer",
+  "license": "Apache-2.0",
+  "keywords": ["productivity", "handoff", "documentation"]
+}
