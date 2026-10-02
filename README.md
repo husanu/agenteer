@@ -139,7 +139,7 @@ Pi does not use a marketplace. Install each package directly from npm; add
 | [`grill2docs`](#grill2docs) | `pi install npm:pi-grill2docs-skill`* | Grill a design and document it |
 | [`handoff`](#handoff) | `pi install npm:pi-handoff-skill` | Hand work to another session |
 | [`jira-cli`](#jira-cli) | `pi install npm:pi-jira-cli-skill`† | Work with Jira |
-| [`retro`](#retro) | `pi install npm:pi-retro-prompt` | Identify project improvements from session waste |
+| [`retro`](#retro) | `pi install npm:pi-retro-skill` | Identify project improvements from session waste |
 
 \* `grill2docs` requires both `grilling` and `domain-modeling`; install those first.
 

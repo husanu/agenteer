@@ -1,13 +1,12 @@
-# pi-retro-prompt
+# pi-retro-skill
 
-A reusable Pi prompt template that adds the `/retro` command for finding
-project-level improvements from wasted context, tool calls, and time in the
-current session.
+A reusable Pi skill for finding project-level improvements from wasted context,
+tool calls, and time in the current session.
 
 ## Installation
 
 ```bash
-pi install npm:pi-retro-prompt
+pi install npm:pi-retro-skill
 ```
 
 For local development:
@@ -18,19 +17,20 @@ pi install ./retro
 
 ## Usage
 
+Invoke the `retro` skill explicitly:
+
 ```text
-/retro
+/skill:retro
 ```
 
-The command mines the current session for avoidable work, filters for changes
+The skill mines the current session for avoidable work, filters for changes
 that benefit future agents on the project, ranks concrete proposals, and asks
-for approval before making any edits.
+for approval before making any edits. It is not automatically model-invoked.
 
 ## Development
 
-The command is defined by [`prompts/retro.md`](prompts/retro.md). Its filename
-is the command name; edit that file and run `/reload` in an active Pi session
-to pick up changes.
+The skill is defined by [`skills/retro/SKILL.md`](skills/retro/SKILL.md). Edit
+that file and run `/reload` in an active Pi session to pick up changes.
 
 ## License
 

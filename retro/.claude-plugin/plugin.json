@@ -3,5 +3,5 @@
   "description": "Identify project improvements from this session's wasted context, tool calls, and time",
   "version": "0.1.0",
   "author": { "name": "Andrei Husanu", "email": "agenteer-retro@egitr.com" },
-  "commands": "./commands/"
+  "skills": "./skills/"
 }
