@@ -32,6 +32,12 @@
       "source": "./jira-cli",
       "description": "Drive Jira from the terminal with the ankitpokhrel/jira-cli tool, non-interactively",
       "category": "productivity"
+    },
+    {
+      "name": "retro",
+      "source": "./retro",
+      "description": "Identify project improvements from this session's wasted context, tool calls, and time",
+      "category": "productivity"
     }
   ]
 }

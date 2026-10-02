@@ -1,0 +1,17 @@
+{
+  "name": "pi-retro-skill",
+  "version": "0.1.0",
+  "description": "A reusable retro skill for identifying project improvements from session waste",
+  "license": "Apache-2.0",
+  "author": "Andrei Husanu <pi-retro-skill@egitr.com>",
+  "keywords": ["pi-package", "pi", "pi-skill", "retro", "retrospective"],
+  "files": ["skills"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/husanu/agenteer",
+    "directory": "retro"
+  },
+  "pi": {
+    "skills": ["./skills"]
+  }
+}
