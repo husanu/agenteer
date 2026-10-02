@@ -1,0 +1,10 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "retro",
+  "description": "Identify project improvements from this session's wasted context, tool calls, and time",
+  "version": "0.1.0",
+  "author": { "name": "Andrei Husanu", "email": "agenteer-retro@egitr.com" },
+  "repository": "https://github.com/husanu/agenteer",
+  "license": "Apache-2.0",
+  "keywords": ["productivity", "retrospective", "continuous-improvement"]
+}

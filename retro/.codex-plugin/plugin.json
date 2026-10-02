@@ -1,0 +1,6 @@
+{
+  "name": "retro",
+  "version": "0.1.0",
+  "description": "Identify project improvements from this session's wasted context, tool calls, and time",
+  "skills": "./skills/"
+}

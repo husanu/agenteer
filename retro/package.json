@@ -1,10 +1,10 @@
 {
   "name": "pi-retro-prompt",
   "version": "0.1.0",
-  "description": "A reusable /retro command for running a project retrospective",
+  "description": "A reusable /retro command for identifying project improvements from session waste",
   "license": "Apache-2.0",
   "author": "Andrei Husanu <pi-retro-prompt@egitr.com>",
-  "keywords": ["pi-package", "pi", "pi-prompt", "retrospective"],
+  "keywords": ["pi-package", "pi", "pi-prompt", "retro", "retrospective"],
   "files": ["prompts"],
   "repository": {
     "type": "git",

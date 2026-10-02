@@ -12,15 +12,16 @@ install the skills that fit your workflow.
 | **GitHub Copilot CLI** | [Set up GitHub Copilot CLI](#github-copilot-cli) | Agenteer marketplace |
 | **Pi coding agent** | [Set up Pi](#pi-coding-agent) | Individual npm packages |
 
-## Skills at a glance
+## Plugins at a glance
 
-| Skill | Add it when you want to… |
+| Plugin | Add it when you want to… |
 |---|---|
 | [`grilling`](#grilling) | pressure-test a plan, decision, or idea before acting |
 | [`domain-modeling`](#domain-modeling) | define a ubiquitous language and capture important architectural decisions |
 | [`grill2docs`](#grill2docs) | turn a design interview into a glossary and ADRs |
 | [`handoff`](#handoff) | leave a safe, useful handoff for the next session or agent |
 | [`jira-cli`](#jira-cli) | work with Jira from the terminal without its interactive UI |
+| [`retro`](#retro) | identify project improvements from session waste before ending work |
 
 ---
 
@@ -42,6 +43,7 @@ claude plugin marketplace add husanu/agenteer
 | [`grill2docs`](#grill2docs) | `claude plugin install grill2docs@agenteer`* | Grill a design and document it |
 | [`handoff`](#handoff) | `claude plugin install handoff@agenteer` | Hand work to another session |
 | [`jira-cli`](#jira-cli) | `claude plugin install jira-cli@agenteer`† | Work with Jira |
+| [`retro`](#retro) | `claude plugin install retro@agenteer` | Identify project improvements from session waste |
 
 \* `grill2docs` requires both `grilling` and `domain-modeling`; install those first.
 
@@ -75,6 +77,7 @@ codex plugin marketplace add husanu/agenteer --ref main
 | [`grill2docs`](#grill2docs) | `codex plugin add grill2docs@agenteer`* | Grill a design and document it |
 | [`handoff`](#handoff) | `codex plugin add handoff@agenteer` | Hand work to another session |
 | [`jira-cli`](#jira-cli) | `codex plugin add jira-cli@agenteer`† | Work with Jira |
+| [`retro`](#retro) | `codex plugin add retro@agenteer` | Identify project improvements from session waste |
 
 \* `grill2docs` requires both `grilling` and `domain-modeling`; install those first.
 
@@ -107,6 +110,7 @@ copilot plugin marketplace add husanu/agenteer
 | [`grill2docs`](#grill2docs) | `copilot plugin install grill2docs@agenteer`* | Grill a design and document it |
 | [`handoff`](#handoff) | `copilot plugin install handoff@agenteer` | Hand work to another session |
 | [`jira-cli`](#jira-cli) | `copilot plugin install jira-cli@agenteer`† | Work with Jira |
+| [`retro`](#retro) | `copilot plugin install retro@agenteer` | Identify project improvements from session waste |
 
 \* `grill2docs` requires both `grilling` and `domain-modeling`; install those first.
 
@@ -125,7 +129,7 @@ See the [GitHub Copilot CLI setup reference](docs/copilot-cli-marketplace.md) fo
 
 ## Pi coding agent
 
-Pi does not use a marketplace. Install each skill directly from npm; add
+Pi does not use a marketplace. Install each package directly from npm; add
 `--local` when it should be available only in the current project.
 
 | Plugin | Install | Use it to… |
@@ -135,6 +139,7 @@ Pi does not use a marketplace. Install each skill directly from npm; add
 | [`grill2docs`](#grill2docs) | `pi install npm:pi-grill2docs-skill`* | Grill a design and document it |
 | [`handoff`](#handoff) | `pi install npm:pi-handoff-skill` | Hand work to another session |
 | [`jira-cli`](#jira-cli) | `pi install npm:pi-jira-cli-skill`† | Work with Jira |
+| [`retro`](#retro) | `pi install npm:pi-retro-prompt` | Identify project improvements from session waste |
 
 \* `grill2docs` requires both `grilling` and `domain-modeling`; install those first.
 
@@ -151,7 +156,7 @@ See the [Pi package reference](docs/pi-marketplace.md) for installation sources 
 
 ---
 
-## What each skill does
+## What each plugin does
 
 ### [grilling](grilling/README.md)
 
@@ -181,6 +186,12 @@ agent.
 Teaches your agent to use the [`jira` CLI](https://github.com/ankitpokhrel/jira-cli)
 safely and non-interactively for searching, creating, editing, transitioning,
 assigning, commenting on, and linking issues.
+
+### [retro](retro/README.md)
+
+Reviews the current session for avoidable context burn, tool-call churn, and
+time-consuming detours; then ranks concrete project improvements and waits for
+approval before applying any.
 
 ## Contributing
 

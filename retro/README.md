@@ -1,7 +1,8 @@
 # pi-retro-prompt
 
-A reusable Pi prompt template that adds the `/retro` command for facilitating a
-concise retrospective of the current work.
+A reusable Pi prompt template that adds the `/retro` command for finding
+project-level improvements from wasted context, tool calls, and time in the
+current session.
 
 ## Installation
 
@@ -19,10 +20,11 @@ pi install ./retro
 
 ```text
 /retro
-/retro "the authentication migration"
 ```
 
-The optional argument narrows the retrospective's scope.
+The command mines the current session for avoidable work, filters for changes
+that benefit future agents on the project, ranks concrete proposals, and asks
+for approval before making any edits.
 
 ## Development
 
