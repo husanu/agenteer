@@ -21,7 +21,7 @@ install the skills that fit your workflow.
 | [`grill2docs`](#grill2docs) | turn a design interview into a glossary and ADRs |
 | [`handoff`](#handoff) | leave a safe, useful handoff for the next session or agent |
 | [`jira-cli`](#jira-cli) | work with Jira from the terminal without its interactive UI |
-| [`retro`](#retro) | identify project improvements from session waste before ending work |
+| [`retro`](#retro) | identify project improvements from a long coding-agent session before ending work |
 
 ---
 
@@ -189,9 +189,9 @@ assigning, commenting on, and linking issues.
 
 ### [retro](retro/README.md)
 
-Reviews the current session for avoidable context burn, tool-call churn, and
-time-consuming detours; then ranks concrete project improvements and waits for
-approval before applying any.
+Invoke at the end of a long coding-agent session. It reviews that session for
+avoidable context burn, tool-call churn, and time-consuming detours; then ranks
+concrete project improvements and waits for approval before applying any.
 
 ## Contributing
 

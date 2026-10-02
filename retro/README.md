@@ -1,7 +1,9 @@
 # pi-retro-skill
 
 A reusable Pi skill for finding project-level improvements from wasted context,
-tool calls, and time in the current session.
+tool calls, and time in the current session. Invoke it at the end of a long
+coding-agent session, while the session's tool calls and detours are still
+available as evidence.
 
 ## Installation
 
