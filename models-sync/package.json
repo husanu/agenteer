@@ -1,0 +1,33 @@
+{
+  "name": "pi-models-sync-extension",
+  "version": "1.0.0",
+  "description": "Synchronize new chat-model IDs from an OpenAI-compatible /models endpoint into Pi models.json",
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "Andrei Husanu <pi-models-sync-extension@egitr.com>",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "openai-compatible",
+    "models"
+  ],
+  "files": [
+    "extensions",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/husanu/agenteer",
+    "directory": "models-sync"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": ["./extensions/models-sync.ts"]
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
