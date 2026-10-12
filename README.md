@@ -22,6 +22,7 @@ install the skills that fit your workflow.
 | [`handoff`](#handoff) | leave a safe, useful handoff for the next session or agent |
 | [`jira-cli`](#jira-cli) | work with Jira from the terminal without its interactive UI |
 | [`retro`](#retro) | identify project improvements from a long coding-agent session before ending work |
+| [`models-sync`](#models-sync-pi-only) | add newly exposed models from an OpenAI-compatible endpoint to Pi |
 
 ---
 
@@ -140,6 +141,7 @@ Pi does not use a marketplace. Install each package directly from npm; add
 | [`handoff`](#handoff) | `pi install npm:pi-handoff-skill` | Hand work to another session |
 | [`jira-cli`](#jira-cli) | `pi install npm:pi-jira-cli-skill`† | Work with Jira |
 | [`retro`](#retro) | `pi install npm:pi-retro-skill` | Identify project improvements from session waste |
+| [`models-sync`](#models-sync-pi-only) | `pi -e npm:pi-models-sync-extension` | Add newly exposed models from a compatible endpoint |
 
 \* `grill2docs` requires both `grilling` and `domain-modeling`; install those first.
 
@@ -192,6 +194,12 @@ assigning, commenting on, and linking issues.
 Invoke at the end of a long coding-agent session. It reviews that session for
 avoidable context burn, tool-call churn, and time-consuming detours; then ranks
 concrete project improvements and waits for approval before applying any.
+
+### [models-sync](models-sync/README.md) (Pi only)
+
+A one-shot extension for adding newly exposed model IDs from an OpenAI-compatible
+`/models` endpoint to Pi's `models.json`, without replacing manual model tuning.
+Run it once with `pi -e npm:pi-models-sync-extension`, then use `/models-sync`.
 
 ## Contributing
 
