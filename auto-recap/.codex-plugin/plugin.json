@@ -1,0 +1,6 @@
+{
+  "name": "auto-recap",
+  "version": "1.0.0",
+  "description": "Keep developers oriented after nontrivial coding-agent work with a concise final recap",
+  "skills": "./skills/"
+}

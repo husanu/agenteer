@@ -1,0 +1,10 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "auto-recap",
+  "description": "Keep developers oriented after nontrivial coding-agent work with a concise final recap",
+  "version": "1.0.0",
+  "author": { "name": "Andrei Husanu", "email": "agenteer-auto-recap@egitr.com" },
+  "repository": "https://github.com/husanu/agenteer",
+  "license": "Apache-2.0",
+  "keywords": ["productivity", "recap", "handoff"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "auto-recap",
+  "description": "Keep developers oriented after nontrivial coding-agent work with a concise final recap",
+  "version": "1.0.0",
+  "author": { "name": "Andrei Husanu", "email": "agenteer-auto-recap@egitr.com" },
+  "skills": "./skills/"
+}
