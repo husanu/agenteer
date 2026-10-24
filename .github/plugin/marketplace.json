@@ -47,6 +47,13 @@
       "description": "Identify project improvements from this session's wasted context, tool calls, and time",
       "version": "0.1.0",
       "category": "productivity"
+    },
+    {
+      "name": "auto-recap",
+      "source": "./auto-recap",
+      "description": "Keep developers oriented after nontrivial coding-agent work with a concise final recap",
+      "version": "1.0.0",
+      "category": "productivity"
     }
   ]
 }

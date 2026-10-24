@@ -1,0 +1,17 @@
+{
+  "name": "pi-auto-recap-skill",
+  "version": "1.0.0",
+  "description": "Keep developers oriented after nontrivial coding-agent work with a concise final recap",
+  "license": "Apache-2.0",
+  "author": "Andrei Husanu <pi-auto-recap-skill@egitr.com>",
+  "keywords": ["pi-package", "pi", "pi-skill", "recap", "productivity"],
+  "files": ["skills"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/husanu/agenteer",
+    "directory": "auto-recap"
+  },
+  "pi": {
+    "skills": ["./skills"]
+  }
+}

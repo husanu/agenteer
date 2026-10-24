@@ -22,6 +22,7 @@ install the skills that fit your workflow.
 | [`handoff`](#handoff) | leave a safe, useful handoff for the next session or agent |
 | [`jira-cli`](#jira-cli) | work with Jira from the terminal without its interactive UI |
 | [`retro`](#retro) | identify project improvements from a long coding-agent session before ending work |
+| [`auto-recap`](#auto-recap) | end substantial agent work with a concise, skimmable completion recap |
 | [`models-sync`](#models-sync-pi-only) | add newly exposed models from an OpenAI-compatible endpoint to Pi |
 
 ---
@@ -45,6 +46,7 @@ claude plugin marketplace add husanu/agenteer
 | [`handoff`](#handoff) | `claude plugin install handoff@agenteer` | Hand work to another session |
 | [`jira-cli`](#jira-cli) | `claude plugin install jira-cli@agenteer`† | Work with Jira |
 | [`retro`](#retro) | `claude plugin install retro@agenteer` | Identify project improvements from session waste |
+| [`auto-recap`](#auto-recap) | `claude plugin install auto-recap@agenteer` | Keep substantial work easy to re-enter |
 
 \* `grill2docs` requires both `grilling` and `domain-modeling`; install those first.
 
@@ -79,6 +81,7 @@ codex plugin marketplace add husanu/agenteer --ref main
 | [`handoff`](#handoff) | `codex plugin add handoff@agenteer` | Hand work to another session |
 | [`jira-cli`](#jira-cli) | `codex plugin add jira-cli@agenteer`† | Work with Jira |
 | [`retro`](#retro) | `codex plugin add retro@agenteer` | Identify project improvements from session waste |
+| [`auto-recap`](#auto-recap) | `codex plugin add auto-recap@agenteer` | Keep substantial work easy to re-enter |
 
 \* `grill2docs` requires both `grilling` and `domain-modeling`; install those first.
 
@@ -112,6 +115,7 @@ copilot plugin marketplace add husanu/agenteer
 | [`handoff`](#handoff) | `copilot plugin install handoff@agenteer` | Hand work to another session |
 | [`jira-cli`](#jira-cli) | `copilot plugin install jira-cli@agenteer`† | Work with Jira |
 | [`retro`](#retro) | `copilot plugin install retro@agenteer` | Identify project improvements from session waste |
+| [`auto-recap`](#auto-recap) | `copilot plugin install auto-recap@agenteer` | Keep substantial work easy to re-enter |
 
 \* `grill2docs` requires both `grilling` and `domain-modeling`; install those first.
 
@@ -141,6 +145,7 @@ Pi does not use a marketplace. Install each package directly from npm; add
 | [`handoff`](#handoff) | `pi install npm:pi-handoff-skill` | Hand work to another session |
 | [`jira-cli`](#jira-cli) | `pi install npm:pi-jira-cli-skill`† | Work with Jira |
 | [`retro`](#retro) | `pi install npm:pi-retro-skill` | Identify project improvements from session waste |
+| [`auto-recap`](#auto-recap) | `pi install npm:pi-auto-recap-skill` | Keep substantial work easy to re-enter |
 | [`models-sync`](#models-sync-pi-only) | `pi -e npm:pi-models-sync-extension` | Add newly exposed models from a compatible endpoint |
 
 \* `grill2docs` requires both `grilling` and `domain-modeling`; install those first.
@@ -194,6 +199,12 @@ assigning, commenting on, and linking issues.
 Invoke at the end of a long coding-agent session. It reviews that session for
 avoidable context burn, tool-call churn, and time-consuming detours; then ranks
 concrete project improvements and waits for approval before applying any.
+
+### [auto-recap](auto-recap/README.md)
+
+Makes an agent end substantial coding, debugging, research, or repository work
+with a brief re-entry summary: goal, result, work, validation, material notes,
+and the exact next action.
 
 ### [models-sync](models-sync/README.md) (Pi only)
 
